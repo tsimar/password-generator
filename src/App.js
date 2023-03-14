@@ -74,9 +74,7 @@ function App() {
   const handleRefresh = (e) => {
     generate();
   }
-  const hancleCopy = (e) => {
-    copy(password)
-  }
+
   useEffect(() => {
       
     generate();
