@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin fontStyle($size, $weight, $height) {
+    font-family: 'Manrope';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: #22232E;
+}
+
+.app {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        @include fontStyle(24px, 700, 33px);
+        margin-top: 32px;
+        margin-left: 16px;
+    }
+
+    .lenghtPassword {
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 16px auto 24px;
+
+
+
+        &__div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &-character {
+
+                @include fontStyle(16px, 700, 22px)
+            }
+
+            &-lenght-number {
+                @include fontStyle(24px, 700, 33px)
+            }
+        }
+
+        & &-line-range {
+            width: 100%;
+        }
+
+    }
+
+    .type__password {
+        width: 311px;
+
+
+        &__div {
+            margin-bottom: 14px;
+
+            &-checkbox {
+                margin-right: 12px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #CECECE;
+                border-radius: 6px;
+
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                outline: none;
+
+            }
+
+            &-checkbox:checked {
+                background-color: #0027FF;
+                border: 1px solid #0027FF;
+
+            }
+
+            &-checkbox:checked::before {
+                content: "\2713";
+                padding: initial;
+                font-weight: bold;
+                color: white;
+            }
+
+            &-label {
+                @include fontStyle(14px, 600, 19px)
+            }
+        }
+
+
+    }
+
+    .strenght {
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: #F7F7F7;
+        border-radius: 12px;
+
+        &__wrapper__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            margin-top: 12px;
+
+            &-p {
+                @include fontStyle(16px, 700, 22px);
+                letter-spacing: -0.02em;
+                color: #000000;
+                margin-left: 16px
+            }
+
+            &-low {
+                @include fontStyle(14px, 600, 19px);
+                letter-spacing: -0.02em;
+                color: #808080;
+                margin: auto 0;
+                margin-right: 16px;
+            }
+        }
+
+        &__wapper-color {
+            margin: 0 auto;
+            display: flex;
+            width: 279px;
+            justify-content: space-between;
+            gap: 7px;
+            margin-bottom: 16px;
+
+            &-div {
+                width: 64.5px;
+                align-self: stretch;
+                background-color: #E2E2E2;
+                height: 6px;
+                border-radius: 90px;
+            }
+
+            & .color {
+                background-color: red;
+            }
+        }
+    }
+
+    .created-password {
+        width: 311px;
+        height: 56px;
+        border: 1px solid #CECECE;
+        border-radius: 12px;
+
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px auto 24px;
+
+        &__password {
+            width: 80%;
+
+            margin-left: 20px;
+
+
+            @include fontStyle(16px, 700, 22px);
+            color: #22232E;
+        }
+
+        &__btn-refresh {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            margin-right: 18px;
+            padding: 0;
+
+            display: flex;
+
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
+
+    .btn {
+        width: 311px;
+        height: 56px;
+
+
+        background: #22232E;
+        border-radius: 12px;
+        text-align: center;
+        @include fontStyle(14px, 700, 19px);
+        color: #ffffff;
+    }
+}

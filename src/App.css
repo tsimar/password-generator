@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.app .title {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #22232E;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+.app .lenghtPassword {
+  width: 311px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 16px auto 24px;
+}
+.app .lenghtPassword__div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.app .lenghtPassword__div-character {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #22232E;
+}
+.app .lenghtPassword__div-lenght-number {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #22232E;
+}
+.app .lenghtPassword .app .lenghtPassword-line-range {
+  width: 100%;
+}
+.app .type__password {
+  width: 311px;
+}
+.app .type__password__div {
+  margin-bottom: 14px;
+}
+.app .type__password__div-checkbox {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #CECECE;
+  border-radius: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+.app .type__password__div-checkbox:checked {
+  background-color: #0027FF;
+  border: 1px solid #0027FF;
+}
+.app .type__password__div-checkbox:checked::before {
+  content: "✓";
+  padding: initial;
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app .type__password__div-label {
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #22232E;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .strenght {
+  width: 311px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #F7F7F7;
+  border-radius: 12px;
+}
+.app .strenght__wrapper__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  margin-top: 12px;
+}
+.app .strenght__wrapper__text-p {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #22232E;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-left: 16px;
+}
+.app .strenght__wrapper__text-low {
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #22232E;
+  letter-spacing: -0.02em;
+  color: #808080;
+  margin: auto 0;
+  margin-right: 16px;
+}
+.app .strenght__wapper-color {
+  margin: 0 auto;
+  display: flex;
+  width: 279px;
+  justify-content: space-between;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+.app .strenght__wapper-color-div {
+  width: 64.5px;
+  align-self: stretch;
+  background-color: #E2E2E2;
+  height: 6px;
+  border-radius: 90px;
+}
+.app .strenght__wapper-color .color {
+  background-color: red;
+}
+.app .created-password {
+  width: 311px;
+  height: 56px;
+  border: 1px solid #CECECE;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px auto 24px;
+}
+.app .created-password__password {
+  width: 80%;
+  margin-left: 20px;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #22232E;
+  color: #22232E;
+}
+.app .created-password__btn-refresh {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 18px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.app .btn {
+  width: 311px;
+  height: 56px;
+  background: #22232E;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #22232E;
+  color: #ffffff;
 }
